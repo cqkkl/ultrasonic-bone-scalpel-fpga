@@ -35,14 +35,6 @@ report/          AI collaboration record and validation status
 
 These are import instructions for the supplied snapshot. This upload session did not rebuild or test the firmware. The prebuilt `board/firmware_legacy.elf` belongs to the original workspace and is not a new build.
 
-## Source completeness
-
-The supplied directory contains PS sources and hardware export artifacts, but no complete top-level RTL, custom IP HDL or XDC constraints. XSA/BIT files do not replace these sources. Full PL reconstruction requires the original Vivado project and IP sources to be added later.
-
-The report describes a fuzzy-PI frequency loop and a PSO-LADRC power loop. This repository records the supplied code snapshot; the final LADRC implementation, PSO scripts and parameters must be added if they exist in another workspace. Their presence is not inferred from report descriptions.
-
-IDE caches, `.metadata`, `.sdk`, debugger caches, duplicate build outputs and machine-specific workspace logs have been excluded. See [docs/project_status.md](docs/project_status.md) before treating this snapshot as a final competition submission.
-
 ## Skill and collaboration records
 
 - [Reusable FPGA control-project audit Skill](skill/README.md): usage, prompt templates, troubleshooting and a standard-library read-only audit script.
