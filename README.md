@@ -12,6 +12,8 @@ src/ps/include/   Application headers
 src/drivers/      Custom AXI IP drivers from the original workspace
 board/           XSA, BIT, MMI, PS initialization files and legacy ELF
 docs/            Project status and import instructions
+skill/           Reusable project-audit Skill, prompts and read-only checker
+report/          AI collaboration record and validation status
 ```
 
 ## Platform
@@ -40,6 +42,14 @@ The supplied directory contains PS sources and hardware export artifacts, but no
 The report describes a fuzzy-PI frequency loop and a PSO-LADRC power loop. This repository records the supplied code snapshot; the final LADRC implementation, PSO scripts and parameters must be added if they exist in another workspace. Their presence is not inferred from report descriptions.
 
 IDE caches, `.metadata`, `.sdk`, debugger caches, duplicate build outputs and machine-specific workspace logs have been excluded. See [docs/project_status.md](docs/project_status.md) before treating this snapshot as a final competition submission.
+
+## Skill and collaboration records
+
+- [Reusable FPGA control-project audit Skill](skill/README.md): usage, prompt templates, troubleshooting and a standard-library read-only audit script.
+- [AI collaboration log](report/ai_collaboration_log.md): actual tasks, analysis, corrections, local-only changes, upload history and evidence boundaries.
+- [Validation status](report/validation_status.md): checks executed for this package and outstanding engineering verification.
+
+The collaboration log separates completed file operations from deployment suggestions and hypothetical report scenarios. Adding this package does not add or validate the final PSO-LADRC implementation.
 
 ## License
 

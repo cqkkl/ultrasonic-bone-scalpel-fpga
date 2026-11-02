@@ -8,6 +8,8 @@ This repository is an upload of the source snapshot provided by the team.
 - Original custom AXI IP drivers.
 - Original hardware export files and legacy executable.
 - Import/build guidance and source provenance hashes.
+- Reusable control-project audit Skill, prompts, troubleshooting and checker.
+- AI collaboration log and explicit validation status.
 
 ## Not verified in this upload
 
@@ -20,8 +22,8 @@ This repository is an upload of the source snapshot provided by the team.
 
 Add the complete Vivado project, custom IP sources and constraints; the final
 control implementation and parameter/optimization files; simulation and board
-test scripts; measured datasets; resource/timing reports; reusable Skill and
-the final report. Record a commit identifier for every tested build.
+test scripts; measured datasets; resource/timing reports; verified use cases
+for the Skill; and the final report. Record a commit identifier for every tested build.
 
 Some original sources use a legacy Chinese text encoding. Preserve or convert
 it deliberately in a separate reviewed commit instead of mixing encoding
